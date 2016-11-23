@@ -94,6 +94,7 @@ body {
 }
 
 #submit-form {
+    margin: 5px;
     border: 1px solid rgb(220, 220, 220);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
