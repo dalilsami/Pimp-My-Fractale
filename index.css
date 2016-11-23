@@ -41,10 +41,20 @@ body {
 }
 
 #form-title {
-    margin: 8px;
+    margin: 10px;
     font-weight: bold;
     font-size: 19pt;
     text-align: center;
+}
+
+.input-form {
+    margin: 5px;
+    text-align: center;
+}
+
+.input-title {
+    margin: 5px;
+    font-size: 14pt;
 }
 
 .input-number {
@@ -56,9 +66,4 @@ body {
     width: 190px;
     height: 35px;
     font-size: 16px;
-}
-
-.input-form {
-    margin: 5px 0 5px 0;
-    text-align: center;
 }
