@@ -10,7 +10,6 @@ function fractale($input)
 //    imagefilledrectangle($image, 100, 100, 700, 500, $white);
 //    imagejpeg($image, 'test.jpg');
 //    imagedestroy($image);
-        echo "done";
     }
 }
 
