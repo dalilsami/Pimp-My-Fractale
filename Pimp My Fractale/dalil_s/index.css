@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Italic;
+}
+
+#header {
+    padding: 20px;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+#calcul-form {
+    float: left;
+    margin: 0 0 100px 100px;
+    border: 1px solid lightgray;
+    width: 375px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(80, 80, 80);
+}
+
+#calcul-form:hover {
+    border-color: rgb(240, 240, 240);
+    box-shadow: 3px 3px 6px lightgray,
+    3px -3px 6px lightgray,
+    -3px 3px 6px lightgray,
+    -3px -3px 6px lightgray;
+}
+
+.form-title {
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 19pt;
+}
+
+#iteration {
+    margin: auto;
+}
