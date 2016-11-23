@@ -12,11 +12,13 @@
     <section id="form-title">Générez une fractale de l'ensemble de Mandelbrot</section>
     <section class="input-form">
         <section class="input-title">Nombre d'itération</section>
-        <input class="input-number" type="number" title="Nombre d'itération" name="iterations" placeholder="50">
+        <input class="input-number" type="number" title="Nombre d'itération" name="iterations" placeholder="50" min="1"
+               max="10" maxlength="5">
     </section>
     <section class="input-form">
         <section class="input-title">Degré</section>
-        <input class="input-number" type="number" title="Degré" name="degre" placeholder="2">
+        <input class="input-number" type="number" title="Degré" name="degre" placeholder="2" min="1" max="10"
+               maxlength="5">
     </section>
     <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit" value="Générer">
     </section>
