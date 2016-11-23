@@ -43,7 +43,7 @@ body {
 #form-title {
     margin: 10px;
     font-weight: bold;
-    font-size: 19pt;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .input-title {
     margin: 8px;
-    font-size: 14pt;
+    font-size: 19px;
 }
 
 .input-number {
@@ -112,4 +112,15 @@ body {
 
 #submit-form:hover {
     border-color: darkgray;
+}
+
+#help {
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
