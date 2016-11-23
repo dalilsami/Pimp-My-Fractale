@@ -21,18 +21,18 @@ body {
 
 #calcul-form:hover {
     border-color: darkgray;
-    -webkit-box-shadow: 1px 1px 10px rgb(230, 230, 230),
-    1px -1px 10px rgb(230, 230, 230),
-    -1px 1px 10px rgb(230, 230, 230),
-    -1px -1px 10px rgb(230, 230, 230);
-    -moz-box-shadow: 1px 1px 10px rgb(230, 230, 230),
-    1px -1px 10px rgb(230, 230, 230),
-    -1px 1px 10px rgb(230, 230, 230),
-    -1px -1px 10px rgb(230, 230, 230);
-    box-shadow: 1px 1px 10px rgb(230, 230, 230),
-    1px -1px 10px rgb(230, 230, 230),
-    -1px 1px 10px rgb(230, 230, 230),
-    -1px -1px 10px rgb(230, 230, 230);
+    -webkit-box-shadow: 1px 1px 25px rgb(230, 230, 230),
+    1px -1px 25px rgb(230, 230, 230),
+    -1px 1px 25px rgb(230, 230, 230),
+    -1px -1px 25px rgb(230, 230, 230);
+    -moz-box-shadow: 1px 1px 25px rgb(230, 230, 230),
+    1px -1px 25px rgb(230, 230, 230),
+    -1px 1px 25px rgb(230, 230, 230),
+    -1px -1px 25px rgb(230, 230, 230);
+    box-shadow: 1px 1px 25px rgb(230, 230, 230),
+    1px -1px 25px rgb(230, 230, 230),
+    -1px 1px 25px rgb(230, 230, 230),
+    -1px -1px 25px rgb(230, 230, 230);
 }
 
 .form-title {
