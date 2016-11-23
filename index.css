@@ -93,4 +93,5 @@ body {
     border: 0 none;
     padding: 5px 15px 5px 15px;
     font-size: 15px;
+    cursor: pointer;
 }
