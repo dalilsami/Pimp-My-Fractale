@@ -12,7 +12,7 @@ body {
 
 #calcul-form {
     float: left;
-    margin: 100px 0 0 5%;
+    margin: 25px 0 0 5%;
     border: 1px solid lightgray;
     width: 375px;
     background-color: rgb(240, 240, 240);
@@ -47,12 +47,14 @@ body {
 }
 
 .input-number {
-    border: 2px solid #999;
-    border-radius: 5px;
+    border: 2px solid rgb(230, 230, 230);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     padding: 0 10px 0 10px;
     width: 200px;
-    height: 50px;
-    font-size: 20px;
+    height: 45px;
+    font-size: 19px;
 }
 
 .input-form {
