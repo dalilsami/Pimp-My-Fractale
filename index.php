@@ -19,7 +19,7 @@
         <input class="input-number" type="number" title="Degré" name="degre" placeholder="2">
     </section>
 <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" value="Générer"></section>
-    <section id="help"><?php fractale($_POST) ?></section>
+    <section id="help" style="opacity: 0;"><?php fractale($_POST) ?></section>
 </form>
 </body>
 </html>

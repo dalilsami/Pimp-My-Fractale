@@ -118,9 +118,10 @@ body {
     margin: 10px;
     font-size: 15px;
     text-align: center;
+    opacity: 1;
 
-    -webkit-transition: margin 0.5s;
-    -moz-transition: margin 0.5s, font-size 0.25s;
-    -o-transition: margin 0.5s, font-size 0.25s;
-    transition: margin 0.5s, font-size 0.25s;
+    -webkit-transition: opacity 0.5s, margin 0.5s, font-size 0.25s;
+    -moz-transition: opacity 0.5s, margin 0.5s, font-size 0.25s;
+    -o-transition: opacity 0.5s, margin 0.5s, font-size 0.25s;
+    transition: opacity 0.5s, margin 0.5s, font-size 0.25s;
 }
