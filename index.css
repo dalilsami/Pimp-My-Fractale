@@ -18,10 +18,10 @@ body {
     background-color: rgb(240, 240, 240);
     color: rgb(80, 80, 80);
 
-    -webkit-transition: -webkit-box-shadow 0.5s;
-    -moz-transition: -moz-box-shadow 0.5s;
-    -o-transition: box-shadow 0.5s;
-    transition: box-shadow 0.5s;
+    -webkit-transition: -webkit-box-shadow 0.25s;
+    -moz-transition: -moz-box-shadow 0.25s;
+    -o-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
 }
 
 #calcul-form:hover {
