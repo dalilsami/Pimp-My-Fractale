@@ -42,8 +42,8 @@ body {
 #form-title {
     margin: 8px;
     font-weight: bold;
-    text-align: center;
     font-size: 19pt;
+    text-align: center;
 }
 
 .input-number {
@@ -52,9 +52,9 @@ body {
     -moz-border-radius: 2px;
     border-radius: 2px;
     padding: 0 10px 0 10px;
-    width: 200px;
-    height: 45px;
-    font-size: 19px;
+    width: 190px;
+    height: 35px;
+    font-size: 16px;
 }
 
 .input-form {
