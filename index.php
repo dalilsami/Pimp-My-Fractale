@@ -16,7 +16,7 @@
     </section>
     <section id="degre">
         <section class="input-title">Degré</section>
-        <input type="number" title="Degré" name="degre" placeholder="2">
+        <input class="input-number" type="number" title="Degré" name="degre" placeholder="2">
     </section>
     <input type="submit" title="Envoi" value="Générer">
     <section id="help"><?php fractale($_POST) ?></section>
