@@ -1,13 +1,24 @@
 <?php
 
-function errors($input)
+function errors()
 {
-  if (empty($input['iterations']) || empty($input['degre']))
-    echo "Remplis tous les champs mec.";
+  echo "Remplis tous les champs mec.";
 }
 
-if (empty($_POST))
-  echo "Entrez le nombre d'iteration et le degre.";
-else
-  errors($_POST);
+function fractale($input)
+{
+  if (empty($input))
+    echo "Entrez le nombre d'iteration et le degre.";
+  else if (!empty($input['iterations']) && !empty($input['degre']))
+  {
+    $image = imagecreatetruecolor(800, 600);
+    $white = imagecolorallocate($image, 255, 255, 255);
+    imagefilledrectangle($image, 100, 100, 700, 500, $white);
+    imagejpeg($image, 'test.jpg');
+    imagedestroy($image);
+    echo "done";
+  }
+  else
+    errors();
+}
 ?>

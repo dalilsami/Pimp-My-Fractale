@@ -20,7 +20,10 @@ include 'fractale.php';
 	<div class="input-title">Degré</div>
 	<input type="text" title="Degré" name="degre" placeholder="2">
       </div>
-      <input type="submit" title="Envoi" value="Générer">
+      <input type="submit" title="Envoi" value="Générer"><br/>
+      <?php
+      fractale($_POST);
+      ?>
     </form>
   </body>
 </html>
