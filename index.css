@@ -68,15 +68,18 @@ body {
     background-color: rgba(235, 237, 240, 0.8);
     font-size: 16px;
     color: black;
+}
 
+.input-number:hover {
+    border-color: black;
 }
 
 .input-number:focus {
     border-color: black;
     background-color: white;
 
-    -webkit-transition: border-color 0.5s, background-color 0.5s;
-    -moz-transition: border-color 0.5s, background-color 0.5s;
-    -o-transition: border-color 0.5s, background-color 0.5s;
-    transition: border-color 0.5s, background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
 }
