@@ -9,12 +9,12 @@
 <body id="html-body">
 <section id="header">Pimp My Fractale</section>
 <form id="calcul-form" action="index.php" method="post">
-    <section class="form-title">Générez une fractale de l'ensemble de Mandelbrot</section>
-    <section id="iteration">
-        <section class="input-title">Nombre d'itérations</section>
+    <section id="form-title">Générez une fractale de l'ensemble de Mandelbrot</section>
+    <section class="input-form">
+        <section class="input-title">Nombre d'itération</section>
         <input class="input-number" type="number" title="Nombre d'itération" name="iterations" placeholder="50">
     </section>
-    <section id="degre">
+    <section class="input">
         <section class="input-title">Degré</section>
         <input class="input-number" type="number" title="Degré" name="degre" placeholder="2">
     </section>
