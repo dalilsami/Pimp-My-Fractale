@@ -17,6 +17,11 @@ body {
     width: 375px;
     background-color: rgb(240, 240, 240);
     color: rgb(80, 80, 80);
+
+    -webkit-transition: -webkit-box-shadow 0.25s, border 0.75s;
+    -moz-transition: -moz-box-shadow 0.25s, border 0.75s;
+    -o-transition: box-shadow 0.25s, border 0.75s;
+    transition: box-shadow 0.25s, border 0.75s;
 }
 
 #calcul-form:hover {
@@ -33,11 +38,6 @@ body {
     1px -1px 25px rgb(230, 230, 230),
     -1px 1px 25px rgb(230, 230, 230),
     -1px -1px 25px rgb(230, 230, 230);
-
-    -webkit-transition: -webkit-box-shadow 0.25s, border 0.75s;
-    -moz-transition: -moz-box-shadow 0.25s, border 0.75s;
-    -o-transition: box-shadow 0.25s, border 0.75s;
-    transition: box-shadow 0.25s, border 0.75s;
 }
 
 #form-title {
