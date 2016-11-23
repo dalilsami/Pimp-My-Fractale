@@ -8,7 +8,7 @@
 </head>
 <body id="html-body">
 <section id="header">Pimp My Fractale</section>
-< id="calcul-form" action="#" method="post">
+<form id="calcul-form" action="#" method="post">
     <section id="form-title">Générez une fractale de l'ensemble de Mandelbrot</section>
     <section class="input-form">
         <section class="input-title">Nombre d'itération</section>
