@@ -2,12 +2,12 @@
 
 function errors($input)
 {
-  if ($input['iteration'] == "2")
-    echo "yo";  
+  if (empty($input['iterations']) || empty($input['degre']))
+    echo "Remplis tous les champs mec.";
 }
 
-if (!empty($_POST))
-  errors($_POST);
-else
+if (empty($_POST))
   echo "Entrez le nombre d'iteration et le degre.";
+else
+  errors($_POST);
 ?>

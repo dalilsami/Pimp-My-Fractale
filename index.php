@@ -1,3 +1,6 @@
+<?php
+include 'fractale.php';
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,7 +14,7 @@
       <div class="form-title">Générez une fractale de l'ensemble de Mandelbrot</div>
       <div id="iteration">
 	<div class="input-title">Nombre d'itérations</div>
-	<input type="text" title="Nombre d'itérations" name="iteration" placeholder="50">
+	<input type="text" title="Nombre d'itérations" name="iterations" placeholder="50">
       </div>
       <div id="degre">
 	<div class="input-title">Degré</div>
@@ -23,6 +26,5 @@
 </html>
 
 <?php
-$
 
 ?>
