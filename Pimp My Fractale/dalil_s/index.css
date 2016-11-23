@@ -17,6 +17,10 @@ body {
     width: 375px;
     background-color: rgb(240, 240, 240);
     color: rgb(80, 80, 80);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 #calcul-form:hover {
@@ -35,7 +39,7 @@ body {
     -1px -1px 25px rgb(230, 230, 230);
 }
 
-.form-title {
+#form-title {
     margin: 8px;
     font-weight: bold;
     text-align: center;
@@ -48,13 +52,7 @@ body {
     height: 50px;
 }
 
-#iteration {
+.input-form {
     margin: 0 5px 0 5px;
     text-align: center;
 }
-
-#degre {
-    margin: 0 5px 0 5px;
-    text-align: center;
-}
-
