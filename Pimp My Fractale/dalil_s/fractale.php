@@ -2,7 +2,7 @@
 
 function errors()
 {
-  echo "Remplis tous les champs mec.";
+  echo "Remplissez tous les champs.";
 }
 
 function fractale($input)
