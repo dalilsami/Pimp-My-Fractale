@@ -14,7 +14,7 @@
         <section class="input-title">Nombre d'itération</section>
         <input class="input-number" type="number" title="Nombre d'itération" name="iterations" placeholder="50">
     </section>
-    <section class="input-form" x>
+    <section class="input-form">
         <section class="input-title">Degré</section>
         <input class="input-number" type="number" title="Degré" name="degre" placeholder="2">
     </section>
