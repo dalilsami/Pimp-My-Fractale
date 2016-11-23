@@ -22,6 +22,7 @@ body {
     -moz-transition: -moz-box-shadow 0.25s, border 0.75s;
     -o-transition: box-shadow 0.25s, border 0.75s;
     transition: box-shadow 0.25s, border 0.75s;
+    transition-delay: 1s;
 }
 
 #calcul-form:hover {
