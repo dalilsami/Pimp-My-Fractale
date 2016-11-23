@@ -103,3 +103,7 @@ body {
     font-size: 17px;
     cursor: pointer;
 }
+
+#submit-form:hover {
+    border-color: darkgray;
+}
