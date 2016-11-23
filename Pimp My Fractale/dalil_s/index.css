@@ -119,8 +119,8 @@ body {
     font-size: 15px;
     text-align: center;
 
-    -webkit-transition: margin 0.5s, font-size 0.25s;
-    -moz-transition: margin 0.5s, font-size 0.25s;
-    -o-transition: margin 0.5s, font-size 0.25s;
-    transition: margin 0.5s, font-size 0.25s;
+    -webkit-transition: margin 1s, font-size 1s;
+    -moz-transition: margin 1s, font-size 1s;
+    -o-transition: margin 1s, font-size 1s;
+    transition: margin 1s, font-size 1s;
 }
