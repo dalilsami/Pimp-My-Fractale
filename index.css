@@ -41,19 +41,19 @@ body {
 }
 
 #form-title {
-    margin: 15px;
+    margin: 10px;
     font-weight: bold;
     font-size: 19pt;
     text-align: center;
 }
 
 .input-form {
-    margin: 9px;
+    margin: 15px;
     text-align: center;
 }
 
 .input-title {
-    margin: 10px;
+    margin: 9px;
     font-size: 14pt;
 }
 
