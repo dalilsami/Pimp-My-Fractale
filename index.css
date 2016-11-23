@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Italic;
+    font-family: Arial, sans-serif;
 }
 
 #header {
@@ -28,12 +28,14 @@ body {
 }
 
 .form-title {
-    margin: 20px;
+    margin: 8px;
     font-weight: bold;
     text-align: center;
     font-size: 19pt;
 }
 
 #iteration {
-    margin: auto;
+    margin: 0 5px 0 5px;
+    text-align: center;
 }
+

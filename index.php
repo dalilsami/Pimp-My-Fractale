@@ -1,33 +1,25 @@
-<?php
-include 'fractale.php';
-?>
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Pimp My Fractale</title>
     <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <div id="header">Pimp My Fractale</div>
-    <form id="calcul-form" action="index.php" method="post">
-      <div class="form-title">Générez une fractale de l'ensemble de Mandelbrot</div>
-      <div id="iteration">
-	<div class="input-title">Nombre d'itérations</div>
-	<input type="text" title="Nombre d'itérations" name="iterations" placeholder="50">
-      </div>
-      <div id="degre">
-	<div class="input-title">Degré</div>
-	<input type="text" title="Degré" name="degre" placeholder="2">
-      </div>
-      <input type="submit" title="Envoi" value="Générer"><br/>
-      <?php
-      fractale($_POST);
-      ?>
-    </form>
-  </body>
+    <?php include 'fractale.php' ?>
+</head>
+<body id="html-body">
+<section id="header">Pimp My Fractale</section>
+<form id="calcul-form" action="index.php" method="post">
+    <section class="form-title">Générez une fractale de l'ensemble de Mandelbrot</section>
+    <section id="iteration">
+        <section class="input-title">Nombre d'itérations</section>
+        <input type="number" title="Nombre d'itérations" name="iterations" placeholder="50">
+    </section>
+    <section id="degre">
+        <section class="input-title">Degré</section>
+        <input type="number" title="Degré" name="degre" placeholder="2">
+    </section>
+    <input type="submit" title="Envoi" value="Générer">
+    <section id="help"><?php fractale($_POST) ?></section>
+</form>
+</body>
 </html>
-
-<?php
-
-?>
