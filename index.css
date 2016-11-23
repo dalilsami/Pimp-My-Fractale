@@ -34,10 +34,10 @@ body {
     -1px 1px 25px rgb(230, 230, 230),
     -1px -1px 25px rgb(230, 230, 230);
 
-    -webkit-transition: -webkit-box-shadow 0.5s, border 1s;
-    -moz-transition: -moz-box-shadow 0.5s, border 1s;
-    -o-transition: box-shadow 0.5s, border 1s;
-    transition: box-shadow 0.5s, border 1s;
+    -webkit-transition: -webkit-box-shadow 0.25s, border 0.75s;
+    -moz-transition: -moz-box-shadow 0.25s, border 0.75s;
+    -o-transition: box-shadow 0.25s, border 0.75s;
+    transition: box-shadow 0.25s, border 0.75s;
 }
 
 #form-title {
