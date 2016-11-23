@@ -67,4 +67,10 @@ body {
     height: 35px;
     background-color: rgb(245, 247, 250);
     font-size: 16px;
+    color: black;
+}
+
+.input-number:active {
+    border-color: black;
+    background-color: white;
 }
