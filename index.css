@@ -69,13 +69,14 @@ body {
     font-size: 16px;
     color: black;
 
-    -webkit-transition: border-color 0.5s, background-color 0.5s;
-    -moz-transition: border-color 0.5s, background-color 0.5s;
-    -o-transition: border-color 0.5s, background-color 0.5s;
-    transition: border-color 0.5s, background-color 0.5s;
 }
 
 .input-number:focus {
     border-color: black;
     background-color: white;
+
+    -webkit-transition: border-color 0.5s, background-color 0.5s;
+    -moz-transition: border-color 0.5s, background-color 0.5s;
+    -o-transition: border-color 0.5s, background-color 0.5s;
+    transition: border-color 0.5s, background-color 0.5s;
 }
