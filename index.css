@@ -88,3 +88,9 @@ body {
     -o-transition: background-color 0.25s;
     transition: background-color 0.25s;
 }
+
+#submit-form {
+    border: 0 none;
+    padding: 5px 15px 5px 15px;
+    font-size: 15px;
+}
