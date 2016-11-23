@@ -76,11 +76,11 @@ body {
 }
 
 .input-number:hover {
-    border-color: black;
+    border-color: darkgray;
 }
 
 .input-number:focus {
-    border-color: black;
+    border-color: darkgray;
     background-color: white;
 
     -webkit-transition: background-color 0.5s;
