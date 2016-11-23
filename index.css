@@ -119,44 +119,8 @@ body {
     font-size: 15px;
     text-align: center;
 
-    -webkit-transition: fadein 1.5s, margin 0.5s, font-size 0.25s;
-    -moz-transition: fadein 1.5s, margin 0.5s, font-size 0.25s;
-    -o-transition: fadein 1.5s, margin 0.5s, font-size 0.25s;
-    transition: fadein 1.5s, margin 0.5s, font-size 0.25s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    -webkit-transition: margin 0.5s, font-size 0.25s;
+    -moz-transition: margin 0.5s, font-size 0.25s;
+    -o-transition: margin 0.5s, font-size 0.25s;
+    transition: margin 0.5s, font-size 0.25s;
 }
