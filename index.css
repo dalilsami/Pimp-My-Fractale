@@ -102,6 +102,11 @@ body {
     background-color: rgba(225, 227, 230, 0.9);
     font-size: 17px;
     cursor: pointer;
+
+    -webkit-transition: border-color 0.5s;
+    -moz-transition: border-color 0.5s;
+    -o-transition: border-color 0.5s;
+    transition: border-color 0.5s;
 }
 
 #submit-form:hover {
