@@ -22,4 +22,8 @@ function error()
     }
 }
 
+function draw()
+{
+}
+
 ?>
