@@ -22,9 +22,9 @@
     </section>
     <?php
     if (error())
-        echo '<section id="help">' . error() . '</section>';
+        echo "<section id='help'>" . error() . "</section></form>";
+    else
+        echo "</form><img id='fractale' src='test.jpg'>";
     ?>
-</form>
-<img id="fractale" src="test.jpg">
 </body>
 </html>
