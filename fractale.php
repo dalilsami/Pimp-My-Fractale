@@ -75,7 +75,7 @@ function draw_mandelbrot()
     imagestring($image, 3, 1, 1, $temps, $noir);
 
     header('Content-type: image/png');
-    imagepng($image);
+    imagepng($image, './test.jpg');
 }
 
 draw_mandelbrot();
