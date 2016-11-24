@@ -37,10 +37,11 @@ function draw_mandelbrot()
     $x2 = 0.6;
     $y1 = -1.2;
     $y2 = 1.2;
+    $zoom = 100;
     $iterations_max = 50;
 
-    $image_x = $x2 - $x1;
-    $image_y = $y2 - $y1;
+    $image_x = ($x2 - $x1) * $zoom;
+    $image_y = ($y2 - $y1) * $zoom;
 
     $image = imagecreatetruecolor($image_x, $image_y);
     $blanc = imagecolorallocate($image, 255, 255, 255);
@@ -49,8 +50,8 @@ function draw_mandelbrot()
 
     for ($x = 0; $x < $image_x; $x++) {
         for ($y = 0; $y < $image_y; $y++) {
-            $c_r = $x + $x1;
-            $c_i = $y + $y1;
+            $c_r = $x / $zoom + $x1;
+            $c_i = $y / $zoom + $y1;
             $z_r = 0;
             $z_i = 0;
             $i = 0;
