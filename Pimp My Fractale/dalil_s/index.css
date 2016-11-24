@@ -23,7 +23,7 @@ body {
     -o-transition: box-shadow 0.25s;
     transition: box-shadow 0.25s;
 
-    -webkit-animation: fadein 3s linear 5s;
+    -webkit-animation: fadein 3s;
 }
 
 #calcul-form:hover {
