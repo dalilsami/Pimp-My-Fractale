@@ -12,18 +12,16 @@
     <section id="form-title">Générez une fractale de l'ensemble de Mandelbrot</section>
     <section class="input-form">
         <section class="input-title">Nombre d'itération</section>
-        <input class="input-number" type="number" title="Nombre d'itération" name="iterations" placeholder="50" min="1"
-               max="10" maxlength="5">
+        <input class="input-number" type="text" title="Nombre d'itération" name="iterations" placeholder="50">
     </section>
     <section class="input-form">
         <section class="input-title">Degré</section>
-        <input class="input-number" type="number" title="Degré" name="degre" placeholder="2" min="1" max="10"
-               maxlength="5">
+        <input class="input-number" type="text" title="Degré" name="degre" placeholder="2">
     </section>
     <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit" value="Générer">
     </section>
     <?php
-    if (!(error() == false))
+    if (error())
         echo '<section id="help">' . error() . '</section>';
     ?>
 </form>
