@@ -11,9 +11,9 @@ function error()
             $degre = 2;
         if (preg_match("/[^0-9]/", $_POST['iterations']) || preg_match("/[^0-9]/", $_POST['degre'])) {
             if (preg_match("/[^0-9]/", $_POST['iterations']))
-                $error .= "Format invalide iteration<br>";
+                $error .= "Le nombre d'itération n'est pas valide.<br>Entrez un nombre entier positif.<br>";
             else if (preg_match("/[^0-9]/", $_POST['degre']))
-                $error .= "Format invalide degre<br>";
+                $error .= "Le dégré n'est pas valide.<br>Entrez un nombre entier positif.<br>";
             return $error;
         } else
             return false;
