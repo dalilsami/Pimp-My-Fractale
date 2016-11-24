@@ -122,12 +122,12 @@ body {
     font-size: 18px;
     text-align: center;
 
-    -webkit-animation: fadein 2s;
+    -webkit-animation: fadein 3s;
 
-    -webkit-transition: margin 2s;
-    -moz-transition: margin 2s;
-    -o-transition: margin 2s;
-    transition: margin 2s;
+    -webkit-transition: margin 3s;
+    -moz-transition: margin 3s;
+    -o-transition: margin 3s;
+    transition: margin 3s;
 }
 
 @-webkit-keyframes fadein {
