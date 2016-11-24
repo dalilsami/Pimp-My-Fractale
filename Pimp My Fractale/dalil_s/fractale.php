@@ -36,6 +36,4 @@ function draw_mandelbrot()
     imagejpeg($image, './test.jpg');
     imagedestroy($image);
 }
-
-draw_mandelbrot();
 ?>
