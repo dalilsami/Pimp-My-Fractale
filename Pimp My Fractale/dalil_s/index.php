@@ -22,7 +22,10 @@
     </section>
     <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit" value="Générer">
     </section>
-    <section id="help"><?php fractale($_POST) ?></section>
+    <?php
+    if (error())
+        echo '<section id="help">' . error() . '</section>';
+    ?>
 </form>
 </body>
 </html>
