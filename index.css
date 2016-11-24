@@ -123,7 +123,6 @@ body {
     margin: 20px;
     font-size: 18px;
     text-align: center;
-    text-shadow: 1px 1px 3px rgb(220, 220, 220);
 
     -webkit-transition: margin 3s;
     -moz-transition: margin 3s;
