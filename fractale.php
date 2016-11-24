@@ -12,7 +12,7 @@ function error()
         if (preg_match("/[^0-9]/", $_POST['iterations']) || preg_match("/[^0-9]/", $_POST['degre'])) {
             if (preg_match("/[^0-9]/", $_POST['iterations']))
                 $error .= "Le nombre d'itération n'est pas valide.<br>Entrez un nombre entier positif.<br>";
-            else if (preg_match("/[^0-9]/", $_POST['degre']))
+            if (preg_match("/[^0-9]/", $_POST['degre']))
                 $error .= "Le dégré n'est pas valide.<br>Entrez un nombre entier positif.<br>";
             return $error;
         } else
