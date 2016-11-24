@@ -13,6 +13,8 @@ function error()
             $degre = 2;
         else
             $degre = (int)$_GET['degre'];
+        echo $degre;
+        echo $iteration;
         if (preg_match("/[^0-9]/", $_GET['iterations']) || preg_match("/[^0-9]/", $_GET['degre'])) {
             if (preg_match("/[^0-9]/", $_GET['iterations']))
                 $error .= "Le nombre d'itération n'est pas valide.<br>Entrez un nombre entier positif.<br>";
