@@ -134,6 +134,11 @@ body {
     animation: fadein 3s;
 }
 
+#fractale {
+    width: 800px;
+    height: 600px;
+}
+
 @-webkit-keyframes fadein {
     0% {
         opacity: 0
