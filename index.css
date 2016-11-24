@@ -122,10 +122,13 @@ body {
     font-size: 18px;
     text-align: center;
 
-    -webkit-animation: fadein 2s;
-    -webkit-animation-delay: 5s;
+    /*-webkit-animation: fadein 2s;*/
 
     -webkit-transition-delay: 3s;
+    -moz-transition-delay: 3s;
+    -o-transition-delay: 3s;
+    transition-delay: 3s;
+
     -webkit-transition: margin 2s;
     -moz-transition: margin 2s;
     -o-transition: margin 2s;
