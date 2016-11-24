@@ -24,7 +24,7 @@
     if (error())
         echo '<section id="help">' . error() . '</section>';
     ?>
-    <img src="test.jpg">
 </form>
+<img id="fractale" src="test.jpg">
 </body>
 </html>
