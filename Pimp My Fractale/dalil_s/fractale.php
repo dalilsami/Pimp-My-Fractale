@@ -36,7 +36,7 @@ $x2 = 3.1;
 $y1 = -2.2;
 $y2 = 2.2;
 $zoom = 100;
-$iterations_max = 3;
+$iterations_max = 5;
 
 $image_x = ($x2 - $x1) * $zoom;
 $image_y = ($y2 - $y1) * $zoom;
