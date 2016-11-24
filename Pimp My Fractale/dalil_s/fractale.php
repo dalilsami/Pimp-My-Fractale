@@ -2,17 +2,17 @@
 function error()
 {
     $error = '';
-    if (empty($_POST["submit"]))
+    if (empty($_GET["submit"]))
         return "Entrez le nombre d'itération et le degré.";
     else {
-        if (empty($_POST['iterations']))
+        if (empty($_GET['iterations']))
             $iteration = 50;
-        if (empty($_POST['degre']))
+        if (empty($_GET['degre']))
             $degre = 2;
-        if (preg_match("/[^0-9]/", $_POST['iterations']) || preg_match("/[^0-9]/", $_POST['degre'])) {
-            if (preg_match("/[^0-9]/", $_POST['iterations']))
+        if (preg_match("/[^0-9]/", $_GET['iterations']) || preg_match("/[^0-9]/", $_GET['degre'])) {
+            if (preg_match("/[^0-9]/", $_GET['iterations']))
                 $error .= "Le nombre d'itération n'est pas valide.<br>Entrez un nombre entier positif.<br>";
-            if (preg_match("/[^0-9]/", $_POST['degre']))
+            if (preg_match("/[^0-9]/", $_GET['degre']))
                 $error .= "Le dégré n'est pas valide.<br>Entrez un nombre entier positif.<br>";
             return $error;
         } else
