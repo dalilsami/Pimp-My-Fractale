@@ -37,4 +37,5 @@ function draw_mandelbrot()
     imagedestroy($image);
 }
 
+draw_mandelbrot();
 ?>

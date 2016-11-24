@@ -24,7 +24,6 @@
     if (error())
         echo '<section id="help">' . error() . '</section>';
     ?>
-    <section><?php draw_mandelbrot(); ?></section>
 </form>
 </body>
 </html>
