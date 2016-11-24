@@ -24,6 +24,7 @@ body {
     transition: box-shadow 0.25s;
 
     -webkit-animation: fadein 3s;
+    animation-delay: 5s;
 }
 
 #calcul-form:hover {
