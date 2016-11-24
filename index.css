@@ -141,6 +141,10 @@ body {
     background: gray;
     width: 675px;
     height: 600px;
+
+    -webkit-animation: fadein 0.75s;
+    -o-animation: fadein 0.75s;
+    animation: fadein 0.75s;
 }
 
 @-webkit-keyframes fadein {
