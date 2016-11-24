@@ -26,6 +26,7 @@ function error()
                 $error .= "Le nombre d'itération doit être compris entre 1 et 1000.";
             if ($degre > 15)
                 $error .= "Le degré doit être compris entre 2 et 15.";
+            return $error;
         } else
             return false;
 //    $image = imagecreatetruecolor(800, 600);
