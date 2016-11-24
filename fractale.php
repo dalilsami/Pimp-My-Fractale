@@ -35,7 +35,7 @@ function error()
 function draw_mandelbrot()
 {
     $x1 = -2.1;
-    $x2 = 2.1;
+    $x2 = 0.6;
     $y1 = -1.2;
     $y2 = 1.2;
     $zoom = 500;
