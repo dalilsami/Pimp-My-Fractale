@@ -23,7 +23,7 @@
     <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit" value="Générer">
     </section>
     <?php
-    if (error())
+    if (!(error() == false))
         echo '<section id="help">' . error() . '</section>';
     ?>
 </form>
