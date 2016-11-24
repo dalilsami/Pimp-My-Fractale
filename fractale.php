@@ -72,4 +72,5 @@ function draw_mandelbrot()
     imagepng($image, './test.jpg');
 }
 
+draw_mandelbrot();
 ?>
