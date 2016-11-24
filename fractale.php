@@ -63,13 +63,7 @@ for ($x = 0; $x < $image_x; $x++) {
         } while (sqrt($z_r * $z_r + $z_i * $z_i) < 2 AND $i < $iterations_max);
 
         if ($i == $iterations_max) {
-            $i = 1;
-            while ($i < 3) {
-                $x *= $i;
-                $x *= $i;
-                imagesetpixel($image, $x, $y, $noir);
-                $i++;
-            }
+            imagesetpixel($image, $x, $y, $noir);
         }
     }
 }
