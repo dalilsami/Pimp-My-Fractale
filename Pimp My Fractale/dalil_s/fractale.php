@@ -1,4 +1,10 @@
 <?php
+$image = imagecreatetruecolor(800, 600);
+$white = imagecolorallocate($image, 255, 255, 255);
+imagefilledrectangle($image, 100, 100, 700, 500, $white);
+imagejpeg($image, 'test.jpg');
+imagedestroy($image);
+
 function error()
 {
     $error = '';
@@ -27,11 +33,6 @@ function error()
             return $error;
         } else
             return false;
-//    $image = imagecreatetruecolor(800, 600);
-//    $white = imagecolorallocate($image, 255, 255, 255);
-//    imagefilledrectangle($image, 100, 100, 700, 500, $white);
-//    imagejpeg($image, 'test.jpg');
-//    imagedestroy($image);
     }
 }
 
