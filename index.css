@@ -124,10 +124,10 @@ body {
 
     /*-webkit-animation: fadein 2s;*/
 
-    -webkit-transition-delay: 3s;
-    -moz-transition-delay: 3s;
-    -o-transition-delay: 3s;
-    transition-delay: 3s;
+    -webkit-transition-delay: 8s;
+    -moz-transition-delay: 8s;
+    -o-transition-delay: 8s;
+    transition-delay: 8s;
 
     -webkit-transition: margin 2s;
     -moz-transition: margin 2s;
