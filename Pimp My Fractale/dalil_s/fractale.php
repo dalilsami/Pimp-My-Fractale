@@ -15,4 +15,5 @@ function fractale($input)
 //    imagedestroy($image);
     }
 }
+
 ?>

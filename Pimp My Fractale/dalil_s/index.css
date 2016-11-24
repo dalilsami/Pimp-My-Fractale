@@ -122,12 +122,7 @@ body {
     font-size: 18px;
     text-align: center;
 
-    /*-webkit-animation: fadein 2s;*/
-
-    -webkit-transition-delay: 8s;
-    -moz-transition-delay: 8s;
-    -o-transition-delay: 8s;
-    transition-delay: 8s;
+    -webkit-animation: fadein 7s;
 
     -webkit-transition: margin 2s;
     -moz-transition: margin 2s;
@@ -136,10 +131,13 @@ body {
 }
 
 @-webkit-keyframes fadein {
-    from {
+    0% {
         opacity: 0
     }
-    to {
+    75% {
+        opacity: 0
+    }
+    100% {
         opacity: 1
     }
 }
