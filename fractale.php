@@ -13,7 +13,7 @@ function error()
         else if (preg_match("/[^0-9]/", $_POST['degre']))
             return "Format invalide degre";
         else
-            return false;
+            return "pas d'erreur";
 //    $image = imagecreatetruecolor(800, 600);
 //    $white = imagecolorallocate($image, 255, 255, 255);
 //    imagefilledrectangle($image, 100, 100, 700, 500, $white);
