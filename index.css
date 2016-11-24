@@ -125,10 +125,10 @@ body {
     text-align: center;
     text-shadow: 1px 1px 3px rgb(220, 220, 220);
 
-    -webkit-transition: margin 3s, text-shadow 5s;
-    -moz-transition: margin 3s, text-shadow 5s;
-    -o-transition: margin 3s, text-shadow 5s;
-    transition: margin 3s, text-shadow 5s;
+    -webkit-transition: margin 3s;
+    -moz-transition: margin 3s;
+    -o-transition: margin 3s;
+    transition: margin 3s;
 
     -webkit-animation: fadein 3s;
     -o-animation: fadein 3s;
