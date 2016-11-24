@@ -30,7 +30,7 @@ function error()
     }
 }
 
-/*function draw_mandelbrot()
+function draw_mandelbrot()
 {
     $image = imagecreatetruecolor("800", "600");
     imagejpeg($image, './test.jpg');
