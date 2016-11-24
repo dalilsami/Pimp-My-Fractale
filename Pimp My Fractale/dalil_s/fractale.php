@@ -21,9 +21,9 @@ function error()
             return $error;
         } else if ($iteration > 1000 || $degre > 15) {
             if ($iteration > 1000)
-                $error .= "Le nombre d'itération doit être compris entre 1 et 1000.";
+                $error .= "Le nombre d'itération doit être compris entre 1 et 1000.<br>";
             if ($degre > 15)
-                $error .= "Le degré doit être compris entre 2 et 15.";
+                $error .= "Le degré doit être compris entre 2 et 15.<br>";
             return $error;
         } else
             return false;
