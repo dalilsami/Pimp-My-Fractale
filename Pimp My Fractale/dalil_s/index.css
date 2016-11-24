@@ -136,6 +136,7 @@ body {
 
 #fractale {
     float: right;
+    margin-right: 10%;
     border: 1px solid darkgray;
     background: gray;
     width: 675px;
