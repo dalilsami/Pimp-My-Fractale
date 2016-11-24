@@ -76,9 +76,6 @@ function draw_mandelbrot()
         }
     }
 
-    header('Content-type: image/png');
     imagepng($image, './test.jpg');
 }
-
-draw_mandelbrot();
 ?>
