@@ -31,42 +31,47 @@ function error()
     }
 }
 
-$x1 = -2.1;
-$x2 = 2.1;
-$y1 = -1.2;
-$y2 = 1.2;
-$zoom = 500;
-$iterations_max = 500;
 
-$image_x = ($x2 - $x1) * $zoom;
-$image_y = ($y2 - $y1) * $zoom;
+function draw_mandelbrot()
+{
+    $x1 = -2.1;
+    $x2 = 2.1;
+    $y1 = -1.2;
+    $y2 = 1.2;
+    $zoom = 500;
+    $iterations_max = 500;
 
-$image = imagecreatetruecolor($image_x, $image_y);
-$blanc = imagecolorallocate($image, 255, 255, 255);
-$noir = imagecolorallocate($image, 0, 0, 0);
-imagefill($image, 0, 0, $blanc);
+    $image_x = ($x2 - $x1) * $zoom;
+    $image_y = ($y2 - $y1) * $zoom;
 
-for ($x = 0; $x < $image_x; $x++) {
-    for ($y = 0; $y < $image_y; $y++) {
-        $c_r = $x / $zoom + $x1;
-        $c_i = $y / $zoom + $y1;
-        $z_r = 0;
-        $z_i = 0;
-        $i = 0;
+    $image = imagecreatetruecolor($image_x, $image_y);
+    $blanc = imagecolorallocate($image, 255, 255, 255);
+    $noir = imagecolorallocate($image, 0, 0, 0);
+    imagefill($image, 0, 0, $blanc);
 
-        do {
-            $old_z_r = $z_r;
-            $old_z_i = $z_i;
-            $z_r = pow($old_z_r, 2) - pow($old_z_i, 2) + $c_r;
-            $z_i = 2 * $old_z_r * $old_z_i + $c_i;
-            $i++;
-        } while (sqrt($z_r * $z_r + $z_i * $z_i) < 2 AND $i < $iterations_max);
+    for ($x = 0; $x < $image_x; $x++) {
+        for ($y = 0; $y < $image_y; $y++) {
+            $c_r = $x / $zoom + $x1;
+            $c_i = $y / $zoom + $y1;
+            $z_r = 0;
+            $z_i = 0;
+            $i = 0;
 
-        if ($i == $iterations_max) {
-            imagesetpixel($image, $x, $y, $noir);
+            do {
+                $old_z_r = $z_r;
+                $old_z_i = $z_i;
+                $z_r = pow($old_z_r, 2) - pow($old_z_i, 2) + $c_r;
+                $z_i = 2 * $old_z_r * $old_z_i + $c_i;
+                $i++;
+            } while (sqrt($z_r * $z_r + $z_i * $z_i) < 2 AND $i < $iterations_max);
+
+            if ($i == $iterations_max) {
+                imagesetpixel($image, $x, $y, $noir);
+            }
         }
     }
+
+    imagepng($image, './test.jpg');
 }
 
-imagepng($image, './test.jpg');
 ?>
