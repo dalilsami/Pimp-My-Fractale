@@ -78,4 +78,6 @@ function draw_mandelbrot()
     imagepng($image);
 }
 
+draw_mandelbrot();
+
 ?>
