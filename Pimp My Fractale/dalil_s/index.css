@@ -24,6 +24,8 @@ body {
     transition: box-shadow 0.25s;
 
     -webkit-animation: fadein 0.75s;
+    -o-animation: fadein 0.75s;
+    animation: fadein 0.75s;
 }
 
 #calcul-form:hover {
@@ -121,20 +123,23 @@ body {
     margin: 20px;
     font-size: 18px;
     text-align: center;
+    text-shadow: 1px 1px 3px rgb(230, 230, 230);
+
+    -webkit-transition: margin 3s, text-shadow 5s;
+    -moz-transition: margin 3s, text-shadow 5s;
+    -o-transition: margin 3s, text-shadow 5s;
+    transition: margin 3s, text-shadow 5s;
 
     -webkit-animation: fadein 3s;
-
-    -webkit-transition: margin 3s;
-    -moz-transition: margin 3s;
-    -o-transition: margin 3s;
-    transition: margin 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
 }
 
 @-webkit-keyframes fadein {
     0% {
         opacity: 0
     }
-    75% {
+    70% {
         opacity: 0
     }
     100% {
