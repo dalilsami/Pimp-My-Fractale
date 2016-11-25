@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pimp My Fractale</title>
-    <link rel="stylesheet" href="style.php">
+    <link rel="stylesheet" type="text/css" href="style.php">
     <?php include 'fractale.php' ?>
 </head>
 <body id="html-body">
