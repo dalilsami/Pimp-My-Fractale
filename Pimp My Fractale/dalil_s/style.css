@@ -16,9 +16,6 @@ body {
 }
 
 #calcul-form {
-<?php if (!error())
-    echo "margin: 50px;";
-?>
     border: 1px solid lightgray;
     width: 375px;
     background-color: rgb(240, 240, 240);
