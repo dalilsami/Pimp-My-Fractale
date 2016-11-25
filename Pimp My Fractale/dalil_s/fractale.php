@@ -1,7 +1,12 @@
 <?php
+$iteration = 50;
+$degre = 2;
+
 function error()
 {
+	global $iteration, $degre;
     $error = '';
+    
     if (empty($_GET["submit"]))
         return "Entrez le nombre d'itération et le degré.";
     else {
@@ -32,14 +37,14 @@ function error()
 }
 
 
-function draw_mandelbrot()
+function draw_mandelbrot($nb_iterations)
 {
     $x1 = -2.1;
     $x2 = 0.6;
     $y1 = -1.2;
     $y2 = 1.2;
     $zoom = 200;
-    $iterations_max = 50;
+    $iterations_max = $nb_iterations;
 
     $image_x = ($x2 - $x1) * $zoom;
     $image_y = ($y2 - $y1) * $zoom;

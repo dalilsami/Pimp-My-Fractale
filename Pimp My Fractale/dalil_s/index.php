@@ -25,7 +25,7 @@
       echo "<section id='help'>" . error() . "</section></form>";
     else
       echo "</form><img id='fractale' src='test.jpg'>";
-      draw_mandelbrot();
+      draw_mandelbrot($iteration);
     ?>
 </body>
 </html>
