@@ -10,9 +10,15 @@ body {
     color: rgb(80, 80, 80);
 }
 
-#calcul-form {
+#form-container {
     float: left;
     margin: 25px 0 0 5%;
+}
+
+#calcul-form {
+<?php if (!error())
+    echo "margin: 50px;";
+?>
     border: 1px solid lightgray;
     width: 375px;
     background-color: rgb(240, 240, 240);
