@@ -22,10 +22,10 @@ body {
     background-color: rgb(240, 240, 240);
     color: rgb(80, 80, 80);
 
-    -webkit-transition: -webkit-box-shadow 0.25s;
-    -moz-transition: -moz-box-shadow 0.25s;
-    -o-transition: box-shadow 0.25s;
-    transition: box-shadow 0.25s;
+    -webkit-transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
+    -moz-transition: -moz-box-shadow 0.25s, -moz-transform 0.25s;
+    -o-transition: box-shadow 0.25s, -o-transform 0.25s;
+    transition: box-shadow 0.25s, transform 0.25s;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
@@ -46,6 +46,11 @@ body {
     1px -1px 25px rgb(230, 230, 230),
     -1px 1px 25px rgb(230, 230, 230),
     -1px -1px 25px rgb(230, 230, 230);
+
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
 }
 
 #form-title {
@@ -145,10 +150,10 @@ body {
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
 
-    -webkit-transition: -webkit-box-shadow 0.25s;
-    -moz-transition: -moz-box-shadow 0.25s;
-    -o-transition: box-shadow 0.25s;
-    transition: box-shadow 0.25s;
+    -webkit-transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
+    -moz-transition: -moz-box-shadow 0.25s, -moz-transform 0.25s;
+    -o-transition: box-shadow 0.25s, -o-transform 0.25s;
+    transition: box-shadow 0.25s, transform 0.25s;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
@@ -170,11 +175,10 @@ body {
     -1px 1px 25px rgb(230, 230, 230),
     -1px -1px 25px rgb(230, 230, 230);
 
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.015);
+    -moz-transform: scale(1.015);
+    -o-transform: scale(1.015);
+    transform: scale(1.015);
 }
 
 #fractale {
