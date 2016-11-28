@@ -1,4 +1,6 @@
 <?php
+require 'complex.php';
+
 function error()
 {
     $error = '';
@@ -35,7 +37,7 @@ function error()
 
 function draw_mandelbrot($nb_iterations, $degre)
 {
-    $x1 = -1.35;
+    $repere_x = -1.35;
     $x2 = 1.35;
     $repere_y = -1.2;
     $y2 = 1.2;
@@ -60,13 +62,12 @@ function draw_mandelbrot($nb_iterations, $degre)
             $c->float = $x / $zoom + $repere_x;
             $c->imaginary = $y / $zoom + $repere_y;
             $z = new complex();
+            $z->float = 0;
+            $z->imaginary = 0;
             $i = 0;
 
             do {
-                $old_z_r = $z_r;
-                $old_z_i = $z_i;
-                $z_r = pow($old_z_r * $old_z_r + $old_z_i * $old_z_i, $degre / 2) * cos($degre * atan2($old_z_i, $old_z_r)) + $c_r;
-                $z_i = pow($old_z_r * $old_z_r + $old_z_i * $old_z_i, $degre / 2) * sin($degre * atan2($old_z_i, $old_z_r)) + $c_i;
+                $z = $z->add_complex($z->pow_complex($z, 2), $c);
                 $i++;
             } while (sqrt($z->float * $z->float + $z->imaginary * $z->imaginary) < 2 AND $i < $iterations_max);
 	    

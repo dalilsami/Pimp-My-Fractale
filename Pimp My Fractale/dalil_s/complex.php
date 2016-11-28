@@ -18,7 +18,7 @@ class complex
     {
         $c = new complex();
 
-        $c->float = $a->float * $b->imaginary - $a->imaginary * $b->float;
+        $c->float = $a->float * $b->float - $a->imaginary * $b->imaginary;
         $c->imaginary = $a->float * $b->imaginary + $a->imaginary * $b->float;
         return $c;
     }
