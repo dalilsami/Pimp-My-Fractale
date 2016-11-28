@@ -109,7 +109,4 @@ function draw_mandelbrot($nb_iterations)
     }
     imagejpeg($image, './fractale.jpg');
 }
-
-draw_mandelbrot(5);
-
 ?>
