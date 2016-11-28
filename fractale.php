@@ -54,7 +54,7 @@ function draw_mandelbrot($nb_iterations, $degre)
 
     $couleur = array();
     for ($i = 0; $i < $iterations_max; $i++)
-        $couleur[$i] = imagecolorallocate($image, $i * 255 / $iterations_max, $i * 255 / $iterations_max, 50);
+        $couleur[$i] = imagecolorallocate($image, $i * 255 / $iterations_max, $i * 255 / $iterations_max, 255);
 
     for ($x = 0; $x < $image_x; $x++) {
         for ($y = 0; $y < $image_y; $y++) {
