@@ -88,16 +88,17 @@ function draw_mandelbrot($nb_iterations)
 
     for ($x = 0; $x < $image_x; $x++) {
         for ($y = 0; $y < $image_y; $y++) {
-            $c = new complex();
-            $c->float = $x / $zoom + $x1;
-            $c->imaginary = $y / $zoom + $y1;
-            $z = new complex(0, 0);
+            //$c = new complex();
+            //$c->float = $x / $zoom + $x1;
+            //$c->imaginary = $y / $zoom + $y1;
+            //$z = new complex(0, 0);
             $i = 0;
 
             do {
-                $z->add_complex($this->pow_complex($z, 2), $c);
+                //$z->add_complex($this->pow_complex($z, 2), $c);
                 $i++;
-            } while (sqrt($z->float * $z->float + $z->imaginary * $z->imaginary) < 2 AND $i < $iterations_max);
+            } while (/*sqrt($z->float * $z->float + $z->imaginary * $z->imaginary) < 2 AND */
+                $i < $iterations_max);
 
             if ($i == $iterations_max) {
                 imagesetpixel($image, $x, $y, $noir);
