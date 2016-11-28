@@ -151,6 +151,8 @@ body {
     border: 1px solid lightgray;
     min-width: 837px;
     min-height: 477px;
+    max-width: 1250px;
+    max-height: 710px;
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
 
@@ -188,6 +190,8 @@ body {
 #fractale {
     min-width: 827px;
     min-height: 467px;
+    max-width: 1240px;
+    max-height: 700px;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
