@@ -142,13 +142,14 @@ body {
 #image-fractale {
     margin: 10px 0 0 5%;
     border: 1px solid lightgray;
-    width: 675px;
-    height: 600px;
+    float: left;
 }
 
 #fractale {
+    margin: 10px;
     width: 675px;
     height: 600px;
+
     -webkit-animation: fadein 1s;
     -o-animation: fadein 1s;
     animation: fadein 1s;
