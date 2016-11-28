@@ -188,7 +188,6 @@ body {
 #fractale {
     min-width: 827px;
     min-height: 467px;
-    height: 56%;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
