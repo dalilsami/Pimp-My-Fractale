@@ -13,8 +13,7 @@ body {
 
 #form-container {
     float: left;
-    margin: 65px 0 0 5%;
-    height: 415px;
+    margin: 65px 0 0 30px;
 }
 
 #calcul-form {
@@ -146,11 +145,11 @@ body {
 
 #img-fractale {
     float: left;
-    margin: 10px 0 0 5%;
+    margin: 10px 0 0 20px;
     padding: 10px;
     border: 1px solid lightgray;
-    max-width: 60%;
-    background-color: rgb(220, 220, 220);
+    width: 65%;
+    background-color: rgb(50, 50, 50);
     color: rgb(80, 80, 80);
 
     -webkit-transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
@@ -185,7 +184,7 @@ body {
 }
 
 #fractale {
-    width: auto;
+    width: 100%;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
