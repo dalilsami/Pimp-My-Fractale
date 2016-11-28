@@ -26,7 +26,7 @@
         echo "<section id='help'>" . error() . "</section></form></section>";
     else {
         echo "</form></section>";
-        echo "<div id='image-fractale'><img id='fractale' src='test.jpg'></div>";
+        echo "<section id='image-fractale'><img id='fractale' src='test.jpg'></section>";
         draw_mandelbrot($iteration);
     }
     ?>
