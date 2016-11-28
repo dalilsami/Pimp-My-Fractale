@@ -12,12 +12,11 @@ body {
 
 #form-container {
     float: left;
-    margin: 25px 0 0 5%;
+    margin: 65px 0 0 5%;
     height: 415px;
 }
 
 #calcul-form {
-    margin-top: 41px;
     border: 1px solid lightgray;
     width: 375px;
     background-color: rgb(240, 240, 240);
