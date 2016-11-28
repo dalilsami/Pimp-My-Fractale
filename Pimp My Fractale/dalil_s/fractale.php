@@ -32,7 +32,7 @@ function error()
     }
 }
 
-
+ 
 function draw_mandelbrot($nb_iterations)
 {
     $x1 = -2.1;
