@@ -33,10 +33,10 @@ function error()
 }
 
 
-function draw_mandelbrot($nb_iterations)
+function draw_mandelbrot($nb_iterations, $degre)
 {
-    $repere_x = -2.1;
-    $x2 = 0.6;
+    $x1 = -1.35;
+    $x2 = 1.35;
     $repere_y = -1.2;
     $y2 = 1.2;
     $zoom = 200;
@@ -63,10 +63,13 @@ function draw_mandelbrot($nb_iterations)
             $i = 0;
 
             do {
-                $z = $z->add_complex($z->pow_complex($z, 2), $c);
+                $old_z_r = $z_r;
+                $old_z_i = $z_i;
+                $z_r = pow($old_z_r * $old_z_r + $old_z_i * $old_z_i, $degre / 2) * cos($degre * atan2($old_z_i, $old_z_r)) + $c_r;
+                $z_i = pow($old_z_r * $old_z_r + $old_z_i * $old_z_i, $degre / 2) * sin($degre * atan2($old_z_i, $old_z_r)) + $c_i;
                 $i++;
             } while (sqrt($z->float * $z->float + $z->imaginary * $z->imaginary) < 2 AND $i < $iterations_max);
-
+	    
             if ($i == $iterations_max)
                 imagesetpixel($image, $x, $y, $noir);
             else
