@@ -24,9 +24,10 @@
     <?php
     if (error())
         echo "<section id='help'>" . error() . "</section></form></section>";
-    else
+    else {
         echo "</form></section><img id='fractale' src='test.jpg'>";
-    draw_mandelbrot($iteration);
+        draw_mandelbrot($iteration);
+    }
     ?>
 </body>
 </html>
