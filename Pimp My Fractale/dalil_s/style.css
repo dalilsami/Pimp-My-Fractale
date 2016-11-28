@@ -149,8 +149,8 @@ body {
     margin: 10px 0 0 5%;
     padding: 10px;
     border: 1px solid lightgray;
-    max-width: 1250px;
-    max-height: 710px;
+    min-width: 837px;
+    max-width: 60%;
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
 
@@ -186,8 +186,8 @@ body {
 }
 
 #fractale {
-    max-width: 1240px;
-    max-height: 700px;
+    min-width: 827px;
+    max-width: 60%;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
