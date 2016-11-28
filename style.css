@@ -162,18 +162,18 @@ body {
 
 #img-fractale:hover {
     border-color: darkgray;
-    -webkit-box-shadow: 1px 1px 25px rgb(220, 220, 220),
-    1px -1px 25px rgb(220, 220, 220),
-    -1px 1px 25px rgb(220, 220, 220),
-    -1px -1px 25px rgb(220, 220, 220);
-    -moz-box-shadow: 1px 1px 25px rgb(220, 220, 220),
-    1px -1px 25px rgb(220, 220, 220),
-    -1px 1px 25px rgb(220, 220, 220),
-    -1px -1px 25px rgb(220, 220, 220);
-    box-shadow: 1px 1px 25px rgb(220, 220, 220),
-    1px -1px 25px rgb(220, 220, 220),
-    -1px 1px 25px rgb(220, 220, 220),
-    -1px -1px 25px rgb(220, 220, 220);
+    -webkit-box-shadow: 3px 3px 25px rgb(220, 220, 220),
+    3px -3px 25px rgb(220, 220, 220),
+    -3px 3px 25px rgb(220, 220, 220),
+    -3px -3px 25px rgb(220, 220, 220);
+    -moz-box-shadow: 3px 3px 25px rgb(220, 220, 220),
+    3px -3px 25px rgb(220, 220, 220),
+    -3px 3px 25px rgb(220, 220, 220),
+    -3px -3px 25px rgb(220, 220, 220);
+    box-shadow: 3px 3px 25px rgb(220, 220, 220),
+    3px -3px 25px rgb(220, 220, 220),
+    -3px 3px 25px rgb(220, 220, 220),
+    -3px -3px 25px rgb(220, 220, 220);
 
     -webkit-transform: scale(1.015);
     -moz-transform: scale(1.015);
