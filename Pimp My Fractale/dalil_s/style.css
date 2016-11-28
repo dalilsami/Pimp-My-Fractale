@@ -147,7 +147,9 @@ body {
 #img-fractale {
     float: left;
     margin: 10px 0 0 5%;
+    padding: 10px;
     border: 1px solid lightgray;
+    width: 75%;
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
 
@@ -183,9 +185,7 @@ body {
 }
 
 #fractale {
-    margin: 10px;
-    width: 675px;
-    height: 600px;
+    height: 56%;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
