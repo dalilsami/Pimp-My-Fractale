@@ -22,10 +22,10 @@ body {
     background-color: rgb(240, 240, 240);
     color: rgb(80, 80, 80);
 
-    -webkit-transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
-    -moz-transition: -moz-box-shadow 0.25s, -moz-transform 0.25s;
-    -o-transition: box-shadow 0.25s, -o-transform 0.25s;
-    transition: box-shadow 0.25s, transform 0.25s;
+    -webkit-transition: -webkit-box-shadow 0.15s, -webkit-transform 0.25s;
+    -moz-transition: -moz-box-shadow 0.15s, -moz-transform 0.25s;
+    -o-transition: box-shadow 0.15s, -o-transform 0.25s;
+    transition: box-shadow 0.15s, transform 0.25s;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
@@ -150,10 +150,10 @@ body {
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
 
-    -webkit-transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
-    -moz-transition: -moz-box-shadow 0.25s, -moz-transform 0.25s;
-    -o-transition: box-shadow 0.25s, -o-transform 0.25s;
-    transition: box-shadow 0.25s, transform 0.25s;
+    -webkit-transition: -webkit-box-shadow 0.15s, -webkit-transform 0.25s;
+    -moz-transition: -moz-box-shadow 0.15s, -moz-transform 0.25s;
+    -o-transition: box-shadow 0.15s, -o-transform 0.25s;
+    transition: box-shadow 0.15s, transform 0.25s;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
@@ -162,18 +162,18 @@ body {
 
 #img-fractale:hover {
     border-color: darkgray;
-    -webkit-box-shadow: 1px 1px 25px rgb(230, 230, 230),
-    1px -1px 25px rgb(230, 230, 230),
-    -1px 1px 25px rgb(230, 230, 230),
-    -1px -1px 25px rgb(230, 230, 230);
-    -moz-box-shadow: 1px 1px 25px rgb(230, 230, 230),
-    1px -1px 25px rgb(230, 230, 230),
-    -1px 1px 25px rgb(230, 230, 230),
-    -1px -1px 25px rgb(230, 230, 230);
-    box-shadow: 1px 1px 25px rgb(230, 230, 230),
-    1px -1px 25px rgb(230, 230, 230),
-    -1px 1px 25px rgb(230, 230, 230),
-    -1px -1px 25px rgb(230, 230, 230);
+    -webkit-box-shadow: 1px 1px 25px rgb(220, 220, 220),
+    1px -1px 25px rgb(220, 220, 220),
+    -1px 1px 25px rgb(220, 220, 220),
+    -1px -1px 25px rgb(220, 220, 220);
+    -moz-box-shadow: 1px 1px 25px rgb(220, 220, 220),
+    1px -1px 25px rgb(220, 220, 220),
+    -1px 1px 25px rgb(220, 220, 220),
+    -1px -1px 25px rgb(220, 220, 220);
+    box-shadow: 1px 1px 25px rgb(220, 220, 220),
+    1px -1px 25px rgb(220, 220, 220),
+    -1px 1px 25px rgb(220, 220, 220),
+    -1px -1px 25px rgb(220, 220, 220);
 
     -webkit-transform: scale(1.015);
     -moz-transform: scale(1.015);
