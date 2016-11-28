@@ -147,6 +147,8 @@ body {
     float: left;
     margin: auto;
     border: 1px solid lightgray;
+    width: 700px;
+    height: 700px;
     position: absolute;
     top: 0;
     bottom: 0;
