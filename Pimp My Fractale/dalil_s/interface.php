@@ -28,7 +28,7 @@
         else {
             echo "</form></section>";
             echo "<section id='img-fractale'><img id='fractale' src='fractale.jpg'></section>";
-            if ($_GET['iterations'] != "")
+            if (!empty($_GET['iterations']))
                 draw_mandelbrot($_GET['iterations']);
             else
                 draw_mandelbrot(50);
