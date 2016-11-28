@@ -7,7 +7,7 @@
     <?php include 'fractale.php' ?>
 </head>
 <body id="html-body">
-<section id="header">Pimp My Fractale</section>
+<section id="header"><img id="pmf" src="title.png"></section>
 <section id="form-container">
     <form id="calcul-form" action="#" method="get">
         <section id="form-title">Générez une fractale de l'ensemble de Mandelbrot</section>
