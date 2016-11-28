@@ -77,7 +77,7 @@ function draw_mandelbrot($nb_iterations)
             }
         }
     }
-    imagepng($image, './fractale.jpg');
+    imagejpeg($image, './fractale.jpg');
 }
 
 ?>
