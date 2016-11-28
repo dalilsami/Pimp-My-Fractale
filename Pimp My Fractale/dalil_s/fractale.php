@@ -89,23 +89,20 @@ function draw_mandelbrot($nb_iterations)
     for ($x = 0; $x < $image_x; $x++) {
         for ($y = 0; $y < $image_y; $y++) {
             $c = new complex();
-            $d = new complex();
             $c->float = $x / $zoom + $repere_x;
             $c->imaginary = $y / $zoom + $repere_y;
             $z = new complex();
             $i = 0;
 
             do {
-                $z = $d->add_complex($d->pow_complex($z, 2), $c);
+                $z = $z->add_complex($z->pow_complex($z, 2), $c);
                 $i++;
             } while (sqrt($z->float * $z->float + $z->imaginary * $z->imaginary) < 2 AND $i < $iterations_max);
 
-            if ($i == $iterations_max) {
+            if ($i == $iterations_max)
                 imagesetpixel($image, $x, $y, $noir);
-            } else {
+            else
                 imagesetpixel($image, $x, $y, $couleur[$i]);
-                var_dump($z);
-            }
         }
     }
     imagejpeg($image, './fractale.jpg');
