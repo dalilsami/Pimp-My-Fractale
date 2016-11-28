@@ -46,7 +46,6 @@ function draw_mandelbrot($nb_iterations, $degre)
 
     $image = imagecreatetruecolor($taille_x, $taille_y);
     $blanc = imagecolorallocate($image, 255, 255, 255);
-    $noir = imagecolorallocate($image, 0, 0, 0);
     imagefill($image, 0, 0, $blanc);
 
     $couleurs = [];
