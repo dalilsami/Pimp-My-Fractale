@@ -150,10 +150,10 @@ body {
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
 
-    -webkit-transition: -webkit-box-shadow 0.15s, -webkit-transform 0.25s;
-    -moz-transition: -moz-box-shadow 0.15s, -moz-transform 0.25s;
-    -o-transition: box-shadow 0.15s, -o-transform 0.25s;
-    transition: box-shadow 0.15s, transform 0.25s;
+    -webkit-transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
+    -moz-transition: -moz-box-shadow 0.25s, -moz-transform 0.25s;
+    -o-transition: box-shadow 0.25s, -o-transform 0.25s;
+    transition: box-shadow 0.25s, transform 0.25s;
 
     -webkit-animation: fadein 0.75s;
     -o-animation: fadein 0.75s;
