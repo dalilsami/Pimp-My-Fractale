@@ -155,7 +155,7 @@ body {
     animation: fadein 0.75s;
 }
 
-#image-fractale:hover {
+#img-fractale:hover {
     -webkit-box-shadow: 1px 1px 25px rgb(230, 230, 230),
     1px -1px 25px rgb(230, 230, 230),
     -1px 1px 25px rgb(230, 230, 230),
