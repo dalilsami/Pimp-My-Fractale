@@ -149,7 +149,7 @@ body {
     margin: 10px 0 0 5%;
     padding: 10px;
     border: 1px solid lightgray;
-    width: 75%;
+    min-width: 60%;
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
 
