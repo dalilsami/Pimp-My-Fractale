@@ -2,8 +2,8 @@
 
 class complex
 {
-    private $float = 0;
-    private $imaginary = 0;
+    public $float = 0;
+    public $imaginary = 0;
 
     public function add_complex($a, $b)
     {
