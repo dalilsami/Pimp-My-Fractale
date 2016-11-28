@@ -103,7 +103,6 @@ function draw_mandelbrot($nb_iterations)
                 imagesetpixel($image, $x, $y, $noir);
             } else {
                 imagesetpixel($image, $x, $y, $couleur[$i]);
-                var_dump($z);
             }
         }
     }
