@@ -10,7 +10,7 @@ function error()
     if (empty($_GET["submit"]))
         return "Entrez le nombre d'itération et le degré.";
     else {
-        if (empty($_GET['iterations']))
+ $c_i;       if (empty($_GET['iterations']))
             $iteration = 50;
         else
             $iteration = (int)$_GET['iterations'];
@@ -44,7 +44,7 @@ function draw_mandelbrot($nb_iterations)
   $y1 = -1.2;
   $y2 = 1.2;
   $zoom = 200;
-  $iterations_max = 50;
+  $iterations_max = $nb_iterations;
   
   $image_x = ($x2 - $x1) * $zoom;
   $image_y = ($y2 - $y1) * $zoom;
@@ -72,7 +72,7 @@ function draw_mandelbrot($nb_iterations)
         $z_r = pow($old_z_r, 2) - pow($old_z_i, 2) + $c_r;
         $z_i = 2 * $old_z_r * $old_z_i + $c_i;
         $i++;
-      } while (sqrt($z_r * $z_r + $z_i * $z_i) < 2 AND $i < $iterations_max);
+      } while (sqrt($z_r * $z_r + $z_i * $z_i) < 2 && $i < $iterations_max);
       
       if ($i == $iterations_max) {
         imagesetpixel($image, $x, $y, $noir);
@@ -82,8 +82,6 @@ function draw_mandelbrot($nb_iterations)
       }
     }
   }
-  
   imagepng($image, './test.jpg');
 }
-
 ?>
