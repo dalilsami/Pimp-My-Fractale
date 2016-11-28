@@ -150,7 +150,6 @@ body {
     border: 1px solid lightgray;
     width: 65%;
     background-color: rgb(220, 220, 220);
-    color: rgb(80, 80, 80);
 
     -webkit-transition: -webkit-box-shadow 0.25s, -webkit-transform 0.25s;
     -moz-transition: -moz-box-shadow 0.25s, -moz-transform 0.25s;
