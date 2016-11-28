@@ -145,7 +145,7 @@ body {
 
 #img-fractale {
     float: left;
-    margin: auto;
+    margin: 10px 0 0 5%;
     border: 1px solid lightgray;
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
