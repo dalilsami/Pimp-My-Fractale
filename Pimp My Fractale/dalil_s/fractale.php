@@ -39,7 +39,7 @@ function draw_mandelbrot($nb_iterations)
     $x2 = 0.6;
     $y1 = -1.2;
     $y2 = 1.2;
-    $zoom = 200;
+    $zoom = 300;
     $iterations_max = $nb_iterations;
 
     $image_x = ($x2 - $x1) * $zoom;
