@@ -1,4 +1,36 @@
 <?php
+
+class complex
+{
+    public $float;
+    public $imaginary;
+
+    public function add_complex($a, $b)
+    {
+        $c = new complex();
+
+        $c->float = $a->float + $b->float;
+        $c->imaginary = $a->imaginary + $b->imaginary;
+        return $c;
+    }
+
+    public function mult_complex($a, $b)
+    {
+        $c = new complex();
+
+        $c->float = $a->float * $b->imaginary - $a->imaginary * $b->float;
+        $c->imaginary = $a->float * $b->imaginary + $a->imaginary * $b->float;
+        return $c;
+    }
+
+    public function pow_complex($a, $p)
+    {
+        if ($p == 1)
+            return $a;
+        return $this->mult_complex($a, $this->pow_complex($a, $p - 1));
+    }
+}
+
 function error()
 {
     $error = '';
@@ -32,7 +64,7 @@ function error()
     }
 }
 
- 
+
 function draw_mandelbrot($nb_iterations)
 {
     $x1 = -2.1;
@@ -56,19 +88,16 @@ function draw_mandelbrot($nb_iterations)
 
     for ($x = 0; $x < $image_x; $x++) {
         for ($y = 0; $y < $image_y; $y++) {
-            $c_r = $x / $zoom + $x1;
-            $c_i = $y / $zoom + $y1;
-            $z_r = 0;
-            $z_i = 0;
+            $c = new complex();
+            $c->float = $x / $zoom + $x1;
+            $c->imaginary = $y / $zoom + $y1;
+            $z = new complex(0, 0);
             $i = 0;
 
             do {
-                $old_z_r = $z_r;
-                $old_z_i = $z_i;
-                $z_r = pow($old_z_r, 2) - pow($old_z_i, 2) + $c_r;
-                $z_i = 2 * $old_z_r * $old_z_i + $c_i;
+                $z->add_complex($this->pow_complex($z, 2), $c);
                 $i++;
-            } while (sqrt($z_r * $z_r + $z_i * $z_i) < 2 AND $i < $iterations_max);
+            } while (sqrt($z->float * $z->float + $z->imaginary * $z->imaginary) < 2 AND $i < $iterations_max);
 
             if ($i == $iterations_max) {
                 imagesetpixel($image, $x, $y, $noir);
