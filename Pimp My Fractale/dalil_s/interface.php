@@ -23,11 +23,10 @@
     </section>
     <?php
     if (error())
-        echo "<section id='help'>" . error() . "</section></form>";
+        echo "<section id='help'>" . error() . "</section></form></section>";
     else
-        echo "</form><img id='fractale' src='test.jpg'>";
+        echo "</form></section><img id='fractale' src='test.jpg'>";
     draw_mandelbrot($iteration);
     ?>
-</section>
 </body>
 </html>
