@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Pimp My Fractale</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <?php include 'testfractale.php' ?>
+    <?php include 'fractale.php' ?>
 </head>
 <body id="html-body">
 <section id="header">Pimp My Fractale</section>
