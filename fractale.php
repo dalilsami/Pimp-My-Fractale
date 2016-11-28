@@ -67,15 +67,15 @@ function error()
 
 function draw_mandelbrot($nb_iterations)
 {
-    $x1 = -2.1;
+    $repere_x = -2.1;
     $x2 = 0.6;
-    $y1 = -1.2;
+    $repere_y = -1.2;
     $y2 = 1.2;
     $zoom = 200;
     $iterations_max = $nb_iterations;
 
-    $image_x = ($x2 - $x1) * $zoom;
-    $image_y = ($y2 - $y1) * $zoom;
+    $image_x = ($x2 - $repere_x) * $zoom;
+    $image_y = ($y2 - $repere_y) * $zoom;
 
     $image = imagecreatetruecolor($image_x, $image_y);
     $blanc = imagecolorallocate($image, 255, 255, 255);
@@ -89,13 +89,14 @@ function draw_mandelbrot($nb_iterations)
     for ($x = 0; $x < $image_x; $x++) {
         for ($y = 0; $y < $image_y; $y++) {
             $c = new complex();
-            $c->float = $x / $zoom + $x1;
-            $c->imaginary = $y / $zoom + $y1;
+            $d = new complex();
+            $c->float = $x / $zoom + $repere_x;
+            $c->imaginary = $y / $zoom + $repere_y;
             $z = new complex();
             $i = 0;
 
             do {
-                $z = $z->add_complex($z->pow_complex($z, 2), $c);
+                $z = $d->add_complex($d->pow_complex($z, 2), $c);
                 $i++;
             } while (sqrt($z->float * $z->float + $z->imaginary * $z->imaginary) < 2 AND $i < $iterations_max);
 
