@@ -147,13 +147,6 @@ body {
     float: left;
     margin: auto;
     border: 1px solid lightgray;
-    width: 700px;
-    height: 700px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: rgb(220, 220, 220);
     color: rgb(80, 80, 80);
 
