@@ -67,7 +67,7 @@ function draw_mandelbrot($nb_iterations, $degre)
             $i = 0;
 
             do {
-                $z = $z->add_complex($z->pow_complex($z, 2), $c);
+                $z = $z->add_complex($z->pow_complex($z, $degre), $c);
                 $i++;
             } while (sqrt($z->float * $z->float + $z->imaginary * $z->imaginary) < 2 AND $i < $iterations_max);
 	    
