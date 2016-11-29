@@ -37,7 +37,7 @@ function draw_mandelbrot($iterations_max, $degre)
 {
     $repere_x = 2.05;
     $repere_y = 1.5;
-    $zoom = 300;
+    $zoom = 200;
 
     $size_x = 2 * $repere_x * $zoom;
     $size_y = 2 * $repere_y * $zoom;
