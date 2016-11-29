@@ -35,50 +35,48 @@ function error()
 
 function draw_mandelbrot($iterations_max, $degre)
 {
-    $x1 = -2.05;
-    $x2 = 2.05;
-    $y1 = -1.5;
-    $y2 = 1.5;
+    $repere_x = 2.05;
+    $repere_y = 1.5;
     $zoom = 300;
 
-    $taille_x = ($x2 - $x1) * $zoom;
-    $taille_y = ($y2 - $y1) * $zoom;
+    $size_x = 2 * $repere_x * $zoom;
+    $size_y = 2 * $repere_y * $zoom;
 
-    $image = imagecreatetruecolor($taille_x, $taille_y);
-    $symmetry = imagecreatetruecolor($taille_x, $taille_y);
-    $blanc = imagecolorallocate($image, 255, 255, 255);
-    imagefill($image, 0, 0, $blanc);
+    $image = imagecreatetruecolor($size_x, $size_y);
+    $symmetry = imagecreatetruecolor($size_x, $size_y);
+    $white = imagecolorallocate($image, 255, 255, 255);
 
+    $gradient = [];
     for ($i = 0; $i < $iterations_max; $i++)
-        $couleur[$i] = imagecolorallocate($image, 255 * $i / $iterations_max + 1, 255 * $i / $iterations_max + 1, 255 * $i / $iterations_max + 1);
+        $gradient[$i] = imagecolorallocate($image, 255 * $i / $iterations_max + 1, 255 * $i / $iterations_max + 1, 255 * $i / $iterations_max + 1);
 
-    for ($x = 0; $x < $taille_x; $x++) {
-        for ($y = 0; $y < $taille_y / 2; $y++) {
-            $c_r = $x / $zoom + $x1;
-            $c_i = $y / $zoom + $y1;
-            $z_r = 0;
-            $z_i = 0;
+    for ($x = 0; $x < $size_x; $x++) {
+        for ($y = 0; $y < $size_y / 2; $y++) {
+            $float_c = $x / $zoom - $repere_x;
+            $imaginary_c = $y / $zoom - $repere_y;
+            $float_z = 0;
+            $imaginary_z = 0;
             $i = 0;
 
             do {
-                $old_z_r = $z_r;
-                $old_z_i = $z_i;
-                $z_r = pow($old_z_r * $old_z_r + $old_z_i * $old_z_i, $degre / 2);
-                $z_i = pow($old_z_r * $old_z_r + $old_z_i * $old_z_i, $degre / 2);
-                $z_r = $z_r * cos($degre * atan2($old_z_i, $old_z_r)) + $c_r;
-                $z_i = $z_i * sin($degre * atan2($old_z_i, $old_z_r)) + $c_i;
+                $old_float_z = $float_z;
+                $old_imaginary_z = $imaginary_z;
+                $float_z = pow($old_float_z * $old_float_z + $old_imaginary_z * $old_imaginary_z, $degre / 2);
+                $imaginary_z = pow($old_float_z * $old_float_z + $old_imaginary_z * $old_imaginary_z, $degre / 2);
+                $float_z = $float_z * cos($degre * atan2($old_imaginary_z, $old_float_z)) + $float_c;
+                $imaginary_z = $imaginary_z * sin($degre * atan2($old_imaginary_z, $old_float_z)) + $imaginary_c;
                 $i++;
-            } while (sqrt($z_r * $z_r + $z_i * $z_i) < 2 && $i < $iterations_max);
+            } while (sqrt($float_z * $float_z + $imaginary_z * $imaginary_z) < 2 && $i < $iterations_max);
 
             if ($i == $iterations_max)
-                imagesetpixel($image, $x, $y, $blanc);
+                imagesetpixel($image, $x, $y, $white);
             else
-                imagesetpixel($image, $x, $y, $couleur[$i]);
+                imagesetpixel($image, $x, $y, $gradient[$i]);
         }
     }
-    imagecopy($symmetry, $image, 0, 0, 0, 0, $taille_x, $taille_y / 2);
+    imagecopy($symmetry, $image, 0, 0, 0, 0, $size_x, $size_y / 2);
     imageflip($symmetry, IMG_FLIP_VERTICAL);
-    imagecopy($image, $symmetry, 0, $taille_y / 2, 0, $taille_y / 2, $taille_x, $taille_y);
+    imagecopy($image, $symmetry, 0, $size_y / 2, 0, $size_y / 2, $size_x, $size_y);
 
     imagepng($image, './fractale.jpg');
 }
