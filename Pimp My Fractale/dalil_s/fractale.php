@@ -21,9 +21,9 @@ function error()
                 $error .= "Le degré n'est pas valide.<br>Entrez un nombre entier positif.<br>";
             return $error;
         }
-        if ($iteration > 1000 || $degre > 15) {
-            if ($iteration > 1000)
-                $error .= "Le nombre d'itération doit être compris entre 1 et 1000.<br>";
+        if ($iteration > 300 || $degre > 15) {
+            if ($iteration > 300)
+                $error .= "Le nombre d'itération doit être compris entre 1 et 300.<br>";
             if ($degre > 15)
                 $error .= "Le degré doit être compris entre 2 et 15.<br>";
             return $error;
