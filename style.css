@@ -103,11 +103,25 @@
 }
 
 .input-form label {
-    font-size: 19px;
+    margin-left: 19px;
+    margin-right: 19px;
+    border: 1px solid rgb(220, 220, 220);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 6px 13px 6px 13px;
+    background-color: rgba(225, 227, 230, 0.9);
+    font-size: 17px;
+    color: inherit;
+    cursor: pointer;
 }
 
-.input-radio:checked {
-    color: green;
+.input-form label:focus {
+    color: white;
+}
+
+.input-radio {
+    display: none;
 }
 
 #float, #imaginary {
