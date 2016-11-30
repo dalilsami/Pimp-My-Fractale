@@ -56,7 +56,7 @@ function draw_julia($float, $imaginary, $nb_iterations, $degre)
 
     $image = imagecreatetruecolor($size_x, $size_y);
     $white = imagecolorallocate($image, 255, 255, 255);
-
+    
     $gradient = [];
     for ($i = 0; $i < $nb_iterations; $i++)
         $gradient[$i] = imagecolorallocate($image, 255 * $i / $nb_iterations + 1, 255 * $i / $nb_iterations + 1, 255 * $i / $nb_iterations + 1);
