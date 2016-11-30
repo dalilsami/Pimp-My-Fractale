@@ -54,37 +54,26 @@
         <?php
         $mandelbrot = error_mandelbrot();
         $julia = error_julia();
-        if (error_mandelbrot())
-            echo "<section id='help'>" . error_mandelbrot() . "</section></form></section>";
+        $message = "";
+
+        if (!is_numeric($mandelbrot[0]))
+            $message .= $mandelbrot[0];
+        if (!is_numeric($mandelbrot[1]))
+            $message .= $mandelbrot[1];
+        if ($_GET['fractal-type'] == "Julia") {
+            if (!is_numeric($julia[0]))
+                $message .= $julia[0];
+            if (!is_numeric($julia[1]))
+                $message .= $julia[1];
+        }
+        if (!empty($message))
+            echo "<section id='help'>" . $message . "</section></form></section>";
         else {
             echo "</form></section><section id='img-fractale'><img id='fractale' src='fractale.jpg'></section>";
-            if ($_GET['fractal-type'] == "Mandelbrot") {
-                $iterations = $_GET['iterations'];
-                $degre = $_GET['degre'];
-                if ($iterations == "" || $degre == "") {
-                    if ($iterations == "")
-                        $iterations = 50;
-                    if ($degre == "")
-                        $degre = 2;
-                }
-                draw_mandelbrot((int)$iterations, (int)$degre);
-            } else if ($_GET['fractal-type'] == "Julia") {
-                $iterations = $_GET['iterations'];
-                $degre = $_GET['degre'];
-                $x = $_GET['x'];
-                $y = $_GET['y'];
-                if ($iterations == "" || $degre == "" || $x == "" || $y == "") {
-                    if ($iterations == "")
-                        $iterations = 50;
-                    if ($degre == "")
-                        $degre = 2;
-                    if ($x == "")
-                        $x = 0.5;
-                    if ($y == "")
-                        $y = 0.5;
-                }
-                draw_julia((float)str_replace(',', '.', $x), (float)str_replace(',', '.', $y), (int)$iterations, (int)$degre);
-            }
+            if ($_GET['fractal-type'] == "Mandelbrot")
+                draw_mandelbrot($mandelbrot[0], $mandelbrot[1]);
+            else if ($_GET['fractal-type'] == "Julia")
+                draw_julia($julia[0], $julia[1], $mandelbrot[0], $mandelbrot[1]);
         }
         ?>
 </body>
