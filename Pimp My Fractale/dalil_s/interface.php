@@ -26,11 +26,11 @@
         </section>
         <section class="input-form">
             <section class="input-title">Partie réelle</section>
-            <input class="input-number" type="text" title="Nombre d'itération" name="iterations" placeholder="0.5">
+            <input class="input-number" type="text" title="Partie réelle" name="x" placeholder="0.5">
         </section>
         <section class="input-form">
             <section class="input-title">Partie imaginaire</section>
-            <input class="input-number" type="text" title="Degré" name="degre" placeholder="0.5">
+            <input class="input-number" type="text" title="Partie imaginaire" name="y" placeholder="0.5">
         </section>
         <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit"
                                               value="Générer">
