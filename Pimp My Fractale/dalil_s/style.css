@@ -102,8 +102,8 @@
     transition: background-color 0.25s;
 }
 
-.input-radio label {
-    font-size: 19px;
+.input-radio {
+    font-size: 22px;
     color: inherit;
 }
 
