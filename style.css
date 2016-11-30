@@ -102,9 +102,12 @@
     transition: background-color 0.25s;
 }
 
-.input-radio {
+.input-form label {
     font-size: 22px;
-    color: inherit;
+}
+
+.input-radio:checked {
+    color: green;
 }
 
 #float, #imaginary {
