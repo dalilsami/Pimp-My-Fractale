@@ -29,11 +29,11 @@ function error_julia()
     if (!empty($_GET['x']) || $_GET['x'] == '0')
         $x = (float)str_replace(',', '.', $_GET['x']);
     else
-        $x = -0.88;
+        $x = -0.75;
     if (!empty($_GET['y']) || $_GET['y'] == '0')
         $y = (float)str_replace(',', '.', $_GET['y']);
     else
-        $y = 0.22;
+        $y = 0.25;
     if (!preg_match("/[+-]?[0-9]+([.,]?[0-9]+)?$/A", $_GET['x']) && !empty($_GET['x']) && $x == 0)
         $x = "La partie réelle n'est pas valide.<br>Entrez un nombre réel.<br>";
     else if ($x > 10 || $x < -10)
