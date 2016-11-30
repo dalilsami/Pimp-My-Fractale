@@ -23,7 +23,7 @@
 <section id="header"><img id="pmf" src="title.png"></section>
 <section id="form-container">
     <form id="calcul-form" action="#" method="get">
-        <section id="form-title">Générez une fractale de l'ensemble de Mandelbrot</section>
+        <section id="form-title">Générez une fractale</section>
         <section class="input-form">
             <section class="input-title">Nombre d'itération</section>
             <input class="input-number" type="text" title="Nombre d'itération" name="iterations" placeholder="50">
@@ -42,11 +42,11 @@
         </section>
         <section id="float" class="input-form">
             <section class="input-title">Partie réelle</section>
-            <input class="input-number" type="text" title="Partie réelle" name="x" placeholder="-0.88">
+            <input class="input-number" type="text" title="Partie réelle" name="x" placeholder="-0.75">
         </section>
         <section id="imaginary" class="input-form">
             <section class="input-title">Partie imaginaire</section>
-            <input class="input-number" type="text" title="Partie imaginaire" name="y" placeholder="0.22">
+            <input class="input-number" type="text" title="Partie imaginaire" name="y" placeholder="0.25">
         </section>
         <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit"
                                               value="Générer">
