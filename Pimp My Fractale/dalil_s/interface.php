@@ -19,6 +19,18 @@
             <section class="input-title">Degré</section>
             <input class="input-number" type="text" title="Degré" name="degre" placeholder="2">
         </section>
+        <section class="input-form">
+            <input class="input-radio" type="radio" title="Type de fractale" name="fractal-type" value="Mandelbrot">
+            <input class="input-radio" type="radio" title="Type de fractale" name="fractal-type" value="Julia">
+        </section>
+        <section class="input-form">
+            <section class="input-title">Partie réelle</section>
+            <input class="input-number" type="text" title="Nombre d'itération" name="iterations" placeholder="0.5">
+        </section>
+        <section class="input-form">
+            <section class="input-title">Partie imaginaire</section>
+            <input class="input-number" type="text" title="Degré" name="degre" placeholder="0.5">
+        </section>
         <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit"
                                               value="Générer">
         </section>
@@ -26,14 +38,35 @@
         if (error())
             echo "<section id='help'>" . error() . "</section></form></section>";
         else {
-            echo "</form></section>";
-            echo "<section id='img-fractale'><img id='fractale' src='fractale.jpg'></section>";
-            if ($_GET['iterations'] != "" && $_GET['degre'] != "")
-                draw_fractal(0, 0, $_GET['iterations'], $_GET['degre']);
-            else
-                draw_fractal(0, 0, 50, 2);
+            echo "</form></section><section id='img-fractale'><img id='fractale' src='fractale.jpg'></section>";
+            if ($_GET['fractal-type'] == "Mandelbrot") {
+                $iterations = $_GET['iterations'];
+                $degre = $_GET['degre'];
+                if ($iterations == "" || $degre == "") {
+                    if ($iterations == "")
+                        $iterations = 50;
+                    if ($degre == "")
+                        $degre = 2;
+                }
+                draw_mandelbrot((int)$iterations, (int)$degre);
+            } else if ($_GET['fractal-type'] == "Julia") {
+                $iterations = $_GET['iterations'];
+                $degre = $_GET['degre'];
+                $x = $_GET['x'];
+                $y = $_GET['y'];
+                if ($iterations == "" || $degre == "" || $x == "" || $y == "") {
+                    if ($iterations == "")
+                        $iterations = 50;
+                    if ($degre == "")
+                        $degre = 2;
+                    if ($x == "")
+                        $x = 0.5;
+                    if ($y == "")
+                        $y = 0.5;
+                }
+                draw_julia((float)$x, (float)$y, (int)$iterations, (int)$degre);
+            }
         }
         ?>
 </body>
 </html>
-
