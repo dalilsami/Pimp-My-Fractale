@@ -116,8 +116,8 @@
     cursor: pointer;
 }
 
-.input-form label:focus {
-    color: white;
+.input-form label:hover {
+    border-color: darkgray;
 }
 
 .input-radio {
