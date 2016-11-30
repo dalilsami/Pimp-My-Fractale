@@ -6,13 +6,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
     <script>
-     window.onload = function() {
-	 var radio1 = document.getElementsByName("fractal-type")[0];
-	 var radio2 = document.getElementsByName("fractal-type")[1];
+        window.onload = function () {
+            var radio1 = document.getElementsByName("fractal-type")[0];
+            var radio2 = document.getElementsByName("fractal-type")[1];
 
-	 radio1.onclick = hide;
-	 radio2.onclick = show;
-     }
+            radio1.onclick = hide;
+            radio2.onclick = show;
+        }
     </script>
     <?php include 'fractale.php' ?>
 </head>
@@ -45,7 +45,8 @@
             <section class="input-title">Partie imaginaire</section>
             <input class="input-number" type="text" title="Partie imaginaire" name="y" placeholder="0.5">
         </section>
-        <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit" value="Générer">
+        <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit"
+                                              value="Générer">
         </section>
         <?php
         if (error())
