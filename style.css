@@ -107,6 +107,10 @@
     color: inherit;
 }
 
+#float, #imaginary {
+    display: none;
+}
+
 #submit-container {
     text-align: center;
 }
