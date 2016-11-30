@@ -23,7 +23,7 @@
 <section id="header"><img id="pmf" src="title.png"></section>
 <section id="form-container">
     <form id="calcul-form" action="#" method="get">
-        <section id="form-title">Générez une fractale</section>
+        <section id="form-title">Génération de fractale</section>
         <section class="input-form">
             <section class="input-title">Nombre d'itération</section>
             <input class="input-number" type="text" title="Nombre d'itération" name="iterations" placeholder="50">
