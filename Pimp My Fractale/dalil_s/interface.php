@@ -42,11 +42,11 @@
         </section>
         <section id="float" class="input-form">
             <section class="input-title">Partie réelle</section>
-            <input class="input-number" type="text" title="Partie réelle" name="x" placeholder="0.5">
+            <input class="input-number" type="text" title="Partie réelle" name="x" placeholder="-0.88">
         </section>
         <section id="imaginary" class="input-form">
             <section class="input-title">Partie imaginaire</section>
-            <input class="input-number" type="text" title="Partie imaginaire" name="y" placeholder="0.5">
+            <input class="input-number" type="text" title="Partie imaginaire" name="y" placeholder="0.22">
         </section>
         <section id="submit-container"><input id="submit-form" type="submit" title="Envoi" name="submit"
                                               value="Générer">
