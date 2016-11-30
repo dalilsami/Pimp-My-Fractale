@@ -21,8 +21,8 @@
         </section>
         <section class="input-form">
             <input class="input-radio" type="radio" title="Type de fractale" name="fractal-type" value="Mandelbrot"
-                   checked>
-            <input class="input-radio" type="radio" title="Type de fractale" name="fractal-type" value="Julia">
+                   checked>Mandelbrot
+            <input class="input-radio" type="radio" title="Type de fractale" name="fractal-type" value="Julia">Julia
         </section>
         <section class="input-form">
             <section class="input-title">Partie réelle</section>
