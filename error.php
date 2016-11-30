@@ -2,7 +2,7 @@
 function error_mandelbrot()
 {
     if (empty($_GET["submit"]))
-        return "Entrez le nombre d'itération et le degré.";
+        return ["Entrez le nombre d'itération et le degré.", 1];
     else {
         if (!empty($_GET['iterations']) || $_GET['iterations'] == '0')
             $iteration = (int)$_GET['iterations'];
