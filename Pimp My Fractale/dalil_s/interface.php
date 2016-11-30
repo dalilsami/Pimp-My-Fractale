@@ -20,9 +20,12 @@
             <input class="input-number" type="text" title="Degré" name="degre" placeholder="2">
         </section>
         <section class="input-form">
-            <input class="input-radio" type="radio" title="Type de fractale" name="fractal-type" value="Mandelbrot"
-                   checked>Mandelbrot
-            <input class="input-radio" type="radio" title="Type de fractale" name="fractal-type" value="Julia">Julia
+            <label for="">Mandelbrot</label>
+            <input id="mandelbrot" class="input-radio" type="radio" title="Type de fractale" name="fractal-type"
+                   value="Mandelbrot" checked>
+            <label for="julia">Julia</label>
+            <input id="julia" class="input-radio" type="radio" title="Type de fractale" name="fractal-type"
+                   value="Julia">
         </section>
         <section class="input-form">
             <section class="input-title">Partie réelle</section>
