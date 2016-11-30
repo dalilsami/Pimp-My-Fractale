@@ -118,6 +118,11 @@
 
 .input-form label:hover {
     border-color: darkgray;
+
+    -webkit-transition: border-color 0.5s;
+    -moz-transition: border-color 0.5s;
+    -o-transition: border-color 0.5s;
+    transition: border-color 0.5s;
 }
 
 .input-radio {
