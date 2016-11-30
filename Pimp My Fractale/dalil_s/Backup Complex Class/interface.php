@@ -23,8 +23,8 @@
                                               value="Générer">
         </section>
         <?php
-        if (error())
-            echo "<section id='help'>" . error() . "</section></form></section>";
+        if (error_mandelbrot())
+            echo "<section id='help'>" . error_mandelbrot() . "</section></form></section>";
         else {
             echo "</form></section>";
             echo "<section id='img-fractale'><img id='fractale' src='fractale.jpg'></section>";
