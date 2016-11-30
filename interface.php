@@ -52,8 +52,10 @@
                                               value="Générer">
         </section>
         <?php
-        if (error())
-            echo "<section id='help'>" . error() . "</section></form></section>";
+        $mandelbrot = error_mandelbrot();
+        $julia = error_julia();
+        if (error_mandelbrot())
+            echo "<section id='help'>" . error_mandelbrot() . "</section></form></section>";
         else {
             echo "</form></section><section id='img-fractale'><img id='fractale' src='fractale.jpg'></section>";
             if ($_GET['fractal-type'] == "Mandelbrot") {
@@ -81,7 +83,7 @@
                     if ($y == "")
                         $y = 0.5;
                 }
-                draw_julia((float)$x, (float)$y, (int)$iterations, (int)$degre);
+                draw_julia((float)str_replace(',', '.', $x), (float)str_replace(',', '.', $y), (int)$iterations, (int)$degre);
             }
         }
         ?>
