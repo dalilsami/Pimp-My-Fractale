@@ -7,11 +7,11 @@
     <script type="text/javascript" src="script.js"></script>
     <script>
         window.onload = function () {
-            var radio1 = document.getElementsByName("fractal-type")[0];
-            var radio2 = document.getElementsByName("fractal-type")[1];
+            var mandelbrot = document.getElementsByName("fractal-type")[0];
+            var julia = document.getElementsByName("fractal-type")[1];
 
-            radio1.onclick = hide;
-            radio2.onclick = show;
+            mandelbrot.onclick = hide_julia;
+            julia.onclick = show_julia;
         }
     </script>
     <?php include 'fractale.php' ?>
