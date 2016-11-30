@@ -14,7 +14,10 @@
             julia.onclick = show_julia;
         }
     </script>
-    <?php include 'fractale.php' ?>
+    <?php
+    include 'fractale.php';
+    include 'error.php';
+    ?>
 </head>
 <body id="html-body">
 <section id="header"><img id="pmf" src="title.png"></section>
