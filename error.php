@@ -4,11 +4,11 @@ function error_mandelbrot()
     if (empty($_GET["submit"]))
         return "Entrez le nombre d'itération et le degré.";
     else {
-        if (!empty($_GET['iterations']) || $_GET['iterations'] == 0)
+        if (!empty($_GET['iterations']) || $_GET['iterations'] == '0')
             $iteration = (int)$_GET['iterations'];
         else
             $iteration = 50;
-        if (!empty($_GET['degre']) || $_GET['degre'] == 0)
+        if (!empty($_GET['degre']) || $_GET['degre'] == '0')
             $degre = (int)$_GET['degre'];
         else
             $degre = 2;
@@ -26,11 +26,11 @@ function error_mandelbrot()
 
 function error_julia()
 {
-    if (!empty($_GET['x']) || $_GET['x'] == 0)
+    if (!empty($_GET['x']) || $_GET['x'] == '0')
         $x = (float)str_replace(',', '.', $_GET['x']);
     else
         $x = 50;
-    if (!empty($_GET['y']) || $_GET['y'] == 0)
+    if (!empty($_GET['y']) || $_GET['y'] == '0')
         $y = (float)str_replace(',', '.', $_GET['y']);
     else
         $y = 2;
